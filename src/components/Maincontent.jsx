@@ -7,7 +7,6 @@ export default function Main() {
 
   const fetchRecipe = async (e) => {
   e.preventDefault();
-
   if (!foodName.trim()) {
     alert("Please enter a food name.");
     return;
@@ -32,7 +31,6 @@ export default function Main() {
     setError("Error fetching recipe.");
   }
 };
-
 
   return (
     <main>
