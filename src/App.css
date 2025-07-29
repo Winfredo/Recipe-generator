@@ -133,3 +133,102 @@ section{
   gap: 40px;
 }
 
+.recipe-display,
+.error-message {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.recipe-display h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.recipe-display img {
+  width: 250px;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  transition: transform 0.4s ease;
+}
+
+.recipe-display img:hover {
+  transform: scale(1.03);
+}
+
+.recipe-display ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 auto;
+}
+
+.recipe-display li {
+  background: #f0efeb;
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: #333;
+  font-size: 0.95rem;
+  width: fit-content;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+
+.recipe-display p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  text-align: left;
+  background: #fcfbf7;
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  animation: fadeSlideIn 0.5s ease-out;
+}
+
+
+.recipe-display {
+  padding: 1.5rem;
+  gap: 1.2rem;
+    animation: fadeSlideIn 0.6s ease-out;
+
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.recipe-display li:nth-child(1) { animation-delay: 0.1s; }
+.recipe-display li:nth-child(2) { animation-delay: 0.2s; }
+.recipe-display li:nth-child(3) { animation-delay: 0.3s; }
+/* …you can continue manually up to ~20, or use JS for dynamic control if needed */
+
