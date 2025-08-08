@@ -38,7 +38,7 @@ export default function Main() {
         <form className="add-ingredient-form" onSubmit={fetchRecipe}>
           <input
             type="text"
-            placeholder="e.g. oregano"
+            placeholder="e.g. rice"
             aria-label="Add ingredient"
             name="ingredient"
             value={foodName}
