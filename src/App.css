@@ -204,7 +204,11 @@ section{
 .recipe-display {
   padding: 1.5rem;
   gap: 1.2rem;
-    animation: fadeSlideIn 0.6s ease-out;
+  animation: fadeSlideIn 0.6s ease-out;
+  background-color: #fffaf3; 
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f0e6d2; 
 }
 
 @keyframes fadeSlideIn {
